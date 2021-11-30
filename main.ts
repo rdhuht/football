@@ -1,6 +1,6 @@
+pins.setPull(DigitalPin.P1, PinPullMode.PullUp)
 music.setVolume(70)
 soundExpression.hello.playUntilDone()
-pins.setPull(DigitalPin.P1, PinPullMode.PullUp)
 basic.showIcon(IconNames.Happy)
 basic.forever(function () {
     serial.writeValue("P1", pins.digitalReadPin(DigitalPin.P1))
